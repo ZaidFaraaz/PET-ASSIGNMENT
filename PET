@@ -1,0 +1,15 @@
+import time
+import random
+
+class Pet:
+    def __init__(self, pet_type, name):
+        self.pet_type = pet_type
+        self.name = name
+        self.hunger = 5
+        self.happiness = 5
+        self.health = 5
+
+    def display_stats(self):
+        print(f"\n{self.name} the {self.pet_type}")
+        print(f"Hunger: {self.hunger}/10 | Happiness: {self.happiness}/10 | Health: {self.health}/10")
+
